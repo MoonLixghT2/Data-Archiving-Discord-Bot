@@ -1,12 +1,11 @@
 # Discord Archiver Bot
 
-A production-ready Discord bot for archiving server data, recording voice channels, and generating organized datasets for AI training or long-term storage.
 
 ---
 
 ## Features
 
-- **Message Archiving** — Scrape full channel history or track in real time. Stores text, embeds, attachments, reactions, edits, and deletions.
+- **Message Archiving** — Scrape full channel history or track in real time. Stores text, embeds(In future prolly), attachments, reactions, edits, and deletions.
 - **Attachment Downloading** — Downloads images, videos, and files with SHA-256 deduplication and retry logic.
 - **Voice Recording** — Joins voice channels and records each participant to a separate WAV file.
 - **Multi-Format Export** — Export archived data as TXT, JSON, JSONL, CSV, or PDF. Large exports are auto-zipped.
@@ -107,7 +106,6 @@ GUILD_ID=your_guild_id node src/scripts/deployCommands.js
 |---|---|
 | **Server Members Intent** | Resolving usernames in archived messages |
 | **Message Content Intent** | Reading message text for archiving |
-| **Guild Voice States** | Voice channel tracking and recording |
 
 Go to: [discord.com/developers](https://discord.com/developers) → Your Application → Bot → Privileged Gateway Intents
 
@@ -304,9 +302,3 @@ Key behavior: allowlist membership is global, not per-server. An allowlisted use
     ├── utils/                  — logger config allowlist permissions helpers hash asyncQueue
     └── scripts/                — deployCommands.js initPlayDl.js
 ```
-
----
-
-## License
-
-MIT — use freely, attribution appreciated.
