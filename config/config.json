@@ -1,0 +1,37 @@
+{
+  "prefix": ".",
+  "ownerID": "",
+  "storagePath": "./data",
+  "logPath": "./logs",
+  "scrape": {
+    "batchSize": 100,
+    "delayBetweenBatches": 1200,
+    "maxRetries": 3,
+    "retryDelay": 5000
+  },
+  "download": {
+    "maxConcurrent": 3,
+    "timeoutMs": 30000,
+    "maxFileSizeMB": 500
+  },
+  "export": {
+    "compressThresholdMB": 8,
+    "supportedFormats": ["txt", "json", "jsonl", "csv", "pdf"]
+  },
+  "voice": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 16,
+    "silenceThresholdMs": 1500,
+    "defaultFormat": "wav"
+  },
+  "music": {
+    "maxQueueSize": 200,
+    "leaveOnEmptyMs": 60000,
+    "leaveOnFinishMs": 30000,
+    "volumeDefault": 0.8
+  },
+  "pagination": {
+    "searchResultsPerPage": 10
+  }
+}

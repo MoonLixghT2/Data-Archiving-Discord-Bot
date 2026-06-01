@@ -1,0 +1,36 @@
+{
+  "name": "discord-archiver-bot",
+  "version": "1.0.0",
+  "description": "Production-ready Discord bot for archiving server data and generating AI training datasets.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node src/scripts/deployCommands.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.4.0",
+    "@discordjs/voice": "^0.19.2",
+    "archiver": "^7.0.1",
+    "axios": "^1.7.2",
+    "better-sqlite3": "^11.0.0",
+    "csv-stringify": "^6.5.1",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "ffmpeg-static": "^5.2.0",
+    "libsodium-wrappers": "^0.7.15",
+    "mime-types": "^2.1.35",
+    "opusscript": "^0.0.8",
+    "pdfkit": "^0.15.0",
+    "play-dl": "^1.9.7",
+    "prism-media": "^1.3.4",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "sodium-native": "^4.1.1"
+  }
+}
